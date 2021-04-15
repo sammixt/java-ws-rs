@@ -1,0 +1,18 @@
+package com.sezeala.restws;
+
+import java.util.List;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+
+import com.sezeala.restws.model.Patient;
+
+@Path("/patientservice")
+public interface PatientService {
+	
+	@Path("/patients")
+	
+	@GET
+	List<Patient> getPatients();
+
+}

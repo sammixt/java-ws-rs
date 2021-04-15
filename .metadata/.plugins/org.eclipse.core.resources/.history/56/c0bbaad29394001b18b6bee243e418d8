@@ -1,0 +1,7 @@
+package com.sezeala.restws;
+
+import javax.ws.rs.ext.ExceptionMapper;
+
+public class PatientBusinessExceptionMapper implements ExceptionMapper<E> {
+
+}

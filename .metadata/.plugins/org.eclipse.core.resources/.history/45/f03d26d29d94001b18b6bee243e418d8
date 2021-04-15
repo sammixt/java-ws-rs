@@ -1,0 +1,29 @@
+package com.sezeala.restwsclient;
+
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.Invocation.Builder;
+import javax.ws.rs.client.WebTarget;
+//import javax.ws.rs.core.Response;
+
+import com.sezeala.restwsclient.model.Patient;
+
+
+
+public class PatientClient {
+
+	private static final String HTTP_LOCALHOST_8080_RESTWS_SERVICES_PATIENTSERVICE = "http://localhost:8080/restws/services/patientservice";
+
+	public static void main(String[] args) {
+		Client client = ClientBuilder.newClient();
+		//WebTarget target = client.target("http://localhost:8080/restws/services/patientservice/patients/123");
+		WebTarget target = client.target(HTTP_LOCALHOST_8080_RESTWS_SERVICES_PATIENTSERVICE).path("/patients").path("/{id}")
+				.resolveTemplate("id", 123);
+		Builder request =  target.request();
+
+		Patient patient = request.get(Patient.class);
+		System.out.println(patient.getName());
+		System.out.println(patient.getId());
+	}
+
+}

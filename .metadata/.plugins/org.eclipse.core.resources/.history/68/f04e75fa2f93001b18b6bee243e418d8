@@ -1,0 +1,47 @@
+package com.sezeala.restws;
+
+import java.util.*;
+
+import javax.ws.rs.core.Response;
+
+import com.sezeala.restws.model.Patient;
+
+import org.springframework.stereotype.Service;
+
+@Service()
+public class PatientServiceImpl implements PatientService {
+
+	Map<Long, Patient> patients = new HashMap<>();
+	long cuurentId = 123;
+	public PatientServiceImpl() {
+		init();
+	}
+	
+	void init() {
+		Patient patient = new Patient();
+		
+		patient.setId(cuurentId);
+		patient.setName("John");
+		patients.put(patient.getId(), patient);
+	}
+
+	@Override
+	public List<Patient> getPatients() {
+	    Collection<Patient>	results = patients.values();
+	    List<Patient> response = new ArrayList<>(results);
+	    return response;
+	}
+
+	@Override
+	public Patient getPatient(Long id) {
+		
+		return patients.get(id);
+	}
+
+	@Override
+	public Response CreatePatient(Patient patient) {
+		patient.setId(++cuurentId);
+		patients.put(patient.getId(),patient);
+		return Response.ok(patient).build();
+	}
+}

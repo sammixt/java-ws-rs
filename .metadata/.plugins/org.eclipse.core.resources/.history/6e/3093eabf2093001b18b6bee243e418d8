@@ -1,0 +1,5 @@
+package com.sezeala.restws;
+
+public class PatientServiceImpl implements PatientService {
+
+}

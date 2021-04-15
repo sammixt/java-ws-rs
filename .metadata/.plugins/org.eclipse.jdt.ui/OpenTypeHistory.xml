@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=restws/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.sezeala.restws{PatientService.java[PatientService" modifiers="513" timestamp="1617313982000"/>
+    <typeInfo handle="=restws/\/Library\/Java\/JavaVirtualMachines\/jdk-16.jdk\/Contents\/Home\/lib\/jrt-fs.jar`java.base=/maven.pomderived=/true=/&lt;java.lang(RuntimeException.class[RuntimeException" modifiers="33" timestamp="1612785331000"/>
+    <typeInfo handle="=restws/\/Users\/esc\/.m2\/repository\/jakarta\/ws\/rs\/jakarta.ws.rs-api\/2.1.6\/jakarta.ws.rs-api-2.1.6.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/maven.groupId=/jakarta.ws.rs=/=/maven.artifactId=/jakarta.ws.rs-api=/=/maven.version=/2.1.6=/=/maven.scope=/compile=/&lt;javax.ws.rs.ext(ExceptionMapper.class[ExceptionMapper" modifiers="1537" timestamp="1617302381000"/>
+</typeInfoHistroy>

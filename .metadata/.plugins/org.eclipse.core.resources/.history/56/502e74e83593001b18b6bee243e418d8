@@ -1,0 +1,7 @@
+#cxf.jaxrs.component-scan=true
+
+cfx.jaxrs.classes-scan=true
+
+cxf.jaxrs.classes-scan-packages=org.codehaus.jackson.jaxrs,com.sezeala.restws
+
+server.servlet.context-path=/restws

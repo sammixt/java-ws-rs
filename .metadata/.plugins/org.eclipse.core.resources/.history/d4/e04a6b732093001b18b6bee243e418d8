@@ -1,0 +1,5 @@
+package com.sezeala.restws.model;
+
+public class Patient {
+
+}
